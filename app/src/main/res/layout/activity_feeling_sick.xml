@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeelingSick">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/feelingSickImage"
+        android:layout_width="wrap_content"
+        android:layout_height="254dp"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="200px"
+        android:layout_marginRight="150px"
+        android:src="@drawable/ic_feeling_sick" />
+
+        <TextView
+            android:id="@+id/feelingSickTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/feelingSickImage"
+            android:layout_marginTop="70px"
+            android:fontFamily="sans-serif"
+            android:text="@string/feel_sick"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feelingSickDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feelingSickTitle"
+        android:layout_marginLeft="140px"
+        android:layout_marginTop="70px"
+        android:layout_marginRight="140px"
+        android:text="Don't worry! You can use our application to help you check your symptoms. Be your own doctor, even at home"
+        android:textAlignment="center"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_skip"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="57dp"
+            android:clickable="true"
+            android:text="@string/skip_button"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="57dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/next_button"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
+
+    </RelativeLayout>

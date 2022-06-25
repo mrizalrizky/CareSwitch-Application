@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeAreOurOwnDoctor">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/doctor_image"
+            android:layout_width="wrap_content"
+            android:layout_height="254dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="200px"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/ic_doctor_image" />
+
+        <TextView
+            android:id="@+id/ownDoctorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doctor_image"
+            android:layout_marginTop="70px"
+            android:fontFamily="sans-serif"
+            android:text="We are our own doctor"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ownDoctorDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ownDoctorTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="140px"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="140px"
+            android:text="Thousand of people are using CareSwitch for better health care!"
+            android:textAlignment="center"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/ownDoctorDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="@color/blue_theme"
+            android:clickable="true"
+            android:focusable="false"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:cornerRadius="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signup"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="513dp"
+            android:layout_marginRight="100dp"
+            android:text="ALREADY HAVE AN ACCOUNT?" />
+
+        <Button
+            android:id="@+id/haveacc_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="503dp"
+            android:layout_marginEnd="61dp"
+            android:text="LOG IN"
+            android:textColor="@color/blue_theme"/>
+    </RelativeLayout>

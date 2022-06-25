@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomCheck">
+
+    <TextView
+        android:id="@+id/sayHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:text="Hi!"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/hospitalBtn"
+        android:layout_width="75dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="105dp"
+        android:layout_toEndOf="@id/showAllBtn"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:text="@string/hospital"
+        android:textAllCaps="true"
+        android:textColor="#5B7D76"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/paymentBtn"
+        android:layout_width="75dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="301dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="35dp"
+        android:layout_toEndOf="@id/ARDiagnoseBtn"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:text="@string/payment"
+        android:textAllCaps="true"
+        android:textColor="#5B7D76"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/showAllBtn"
+        android:layout_width="52dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="105dp"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:text="All"
+        android:textAllCaps="true"
+        android:textColor="#5B7D76"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ARDiagnoseBtn"
+        android:layout_width="126dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="105dp"
+        android:layout_toEndOf="@id/hospitalBtn"
+        android:backgroundTint="#FFFFFF"
+        android:padding="0dp"
+        android:text="AR Diagnose: DWT"
+        android:textAllCaps="true"
+        android:textColor="#5B7D76"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/preventionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showAllBtn"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="Prevention" />
+
+    <TextView
+        android:id="@+id/symptomsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showAllBtn"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/preventionTitle"
+        android:text="Symptoms" />
+
+    <TextView
+        android:id="@+id/diagnosisTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showAllBtn"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toEndOf="@id/symptomsTitle"
+        android:text="Diagnosis" />
+
+    <TextView
+        android:id="@+id/scTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preventionTitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-30dp"
+        android:text="Symptoms Check"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/symptomsDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scTitle"
+        android:layout_marginStart="30dp"
+        android:text="Check your symptoms for"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/coldTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptomsDesc"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Cold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fluTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptomsDesc"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/coldTitle"
+        android:text="Flu"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/covidTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptomsDesc"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/fluTitle"
+        android:text="COVID-19"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/coldIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coldTitle"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_cold" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/fluIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fluTitle"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/coldIcon"
+        android:src="@drawable/ic_flu" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/covidIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/covidTitle"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/fluIcon"
+        android:src="@drawable/ic_covid" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/symptomsIconHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coldIcon"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_cfcgroup"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/dividerTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/symptomsIconHere"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/shortnessOfBreath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dividerTop"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_shortnessofbreath"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/divider1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shortnessOfBreath"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/fever"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_fever" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/divider2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fever"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/cough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_coughchestdiscomfort"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/divider3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cough"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/fatigue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_fatigueweakness"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/divider4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fatigue"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/aches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider4"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_aches"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/divider5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aches"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/chills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider5"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_chills" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/divider6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chills"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/headache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider6"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_headache" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/divider7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headache"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_line_divider" />
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--        android:id="@+id/soreThroat"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/divider7"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:src="@drawable/ic_sorethroat" />-->
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--        android:id="@+id/divider8"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/soreThroat"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:src="@drawable/ic_line_divider" />-->
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--        android:id="@+id/sneezing"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/divider8"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:src="@drawable/ic_sneezing" />-->
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--        android:id="@+id/divider9"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/sneezing"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:src="@drawable/ic_line_divider" />-->
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--        android:id="@+id/stuffy"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/divider9"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:src="@drawable/ic_stuffyrunnynose" />-->
+
+<!--    <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--        android:id="@+id/divider10"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/stuffy"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:src="@drawable/ic_line_divider" />-->
+
+    <TextView
+        android:id="@+id/legendTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider7"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Legend"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/legendIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/legendTitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_legendicon" />
+
+    <Button
+        android:id="@+id/quickCheckUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF647C"
+        android:text="Do a quick check-up"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+
+
+
+
+
+
+
+</RelativeLayout>

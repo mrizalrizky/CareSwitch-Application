@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportDetail">
+
+    <TextView
+        android:id="@+id/reportTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:letterSpacing=".10"
+        android:text="@string/reports"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#999999"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/latestReportTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="223dp"
+        android:text="@string/latestReport" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="381dp"
+        android:layout_height="418dp"
+        android:layout_below="@id/latestReportTitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/reportresult2" />
+
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FF647C"
+        android:text="Back to Home"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
